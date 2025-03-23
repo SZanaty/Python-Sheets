@@ -9,7 +9,7 @@ Age = input("Enter your age: ") #Enter your age
 print ("Hello " + Name + " ,Your age is " + Age) #Print outputs with greetings
 ~~~
 Output: `Hello Seif ,Your age is 21`
-
+<br>
 
 2.Code (Name= Seif, Age=21)
 ~~~
@@ -18,14 +18,14 @@ Age1 = int(input("Enter your age: ")) #Enter your age - as int data type
 print ( Name1 * Age1) #Print your name x age
 ~~~
 Output: `SeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeifSeif`
-
+<br>
 
 3.Code
 ~~~
 file_name = "/home/user/projects/my_project/file.txt"
 ~~~
 Didnt figure it out
-
+<br>
 
 4.Code
 ~~~
@@ -38,7 +38,7 @@ my_str = sub_strs[0].upper() + ', ' + "python".title() + '!'
 print(my_str)
 ~~~
 Output `HELLO, Python!`
-
+<br>
 
 5.Code (Name= Seif)
 ~~~
@@ -48,7 +48,7 @@ HW = HW.replace("world", Name2) #Changes world with the typed name
 print(HW)
 ~~~
 Output `Hello Seif`
-
+<br>
 
 6.Code
 ~~~
@@ -58,7 +58,7 @@ find_ao = ("o is in the ", find_o + 1 ,"index")
 print (find_ao)
 ~~~
 Output `('o is in the ', 5, 'index')`  I dont know why it has '' but i tried
-
+<br>
 
 7.Code 
 ~~~
@@ -66,7 +66,7 @@ Count_o = H.count("o")
 print (Count_o)
 ~~~
 Output `1`
-
+<br>
 
 8.Code
 ~~~
@@ -79,7 +79,7 @@ print(chr(72) + chr(111) + chr(119) + chr(33))
 Output `0.3333 + 0.6667 = 1.0000
 0.1 + 0.2 = 0.30000000000000004
 How!`
-
+<br>
 
 9.Code
 ~~~
