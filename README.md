@@ -1,14 +1,10 @@
-print(10 // 6)
-h = print("Hello")
-find_o = h.find("o")
-find_ao = h.find("o", find_o + 1)
-count = h.count("o")
-Username = input("Hello sir, Whats your name? \n" ) #Display & Enter name
-Age = int(input("Hello " + Username + ", Whats your birth year? " )) #Greeting & Ask for birth year
-print(2025 - Age)
-Married_statues = input("Are you married? (Answer with 'True or False') ").strip() == "True"
-print(Married_statues) #Boolean
+# Python-Sheets
+## Student: Seif Eldeen Sherif Mohamed
 
-gb = "Good Bye"
-print(gb)
-file_name = "Users\Jam22\OneDrive\Desktop"
+Contains all codes and testing
+
+[My code](https://github.com/SZanaty/Python-Sheets/blob/ad2eafcaea47a79ac33eb16254292eb9ad63be62/My%20code) <br>
+
+[Sheet 1](https://example.com)<br>
+
+[Sheet 2](https://example.com)<br>
