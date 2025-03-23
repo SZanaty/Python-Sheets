@@ -1,0 +1,8 @@
+
+Name = input("Enter your name: ") # Enter your name
+Age = input("Enter your age: ") #Enter your age 
+print ("Hello " + Name + " ,Your age is " + Age) #Print outputs with greetings
+
+Name1 = input("Enter your name: ") # Enter your name
+Age1 = int(input("Enter your age: ")) #Enter your age - as int data type
+print ( Name1 * Age1) #Print your name x age
