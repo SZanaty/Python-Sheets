@@ -1,0 +1,40 @@
+s = "Hello world"
+print(s[-5:] + ' ' + s[0:5])
+
+print ("Welcome to the system")
+
+Name = input("Enter your name: ") # Enter your name
+Age = input("Enter your age: ") #Enter your age 
+print ("Hello " + Name + " ,Your age is " + Age) #Print outputs with greetings
+
+Name1 = input("Enter your name: ") # Enter your name
+Age1 = int(input("Enter your age: ")) #Enter your age - as int data type
+print ( Name1 * Age1) #Print your name x age
+
+my_str = "    hello           world          "
+my_str = my_str.strip()
+my_str = my_str.title()
+sub_strs = my_str.split(' ')
+my_str = sub_strs[0].upper() + ', ' + "python".title() + '!'
+print(my_str)
+
+HW = "Hello world"
+Name2 = input("Enter your name ") #Enter your name
+HW = HW.replace("world", Name2) #Changes world with the typed name
+print(HW)
+
+H = "Hello"
+Find_o = H.find("o")
+Find_ao = ("o is in the ", Find_o + 1 ,"index")
+Count_o = H.count("o")
+print (Find_ao)
+print (Count_o)
+
+a = 1 / 3
+b = 2 / 3
+print(f"{a:.4f} + {b:.4f} = {a + b:.4f}")
+print(f"0.1 + 0.2 = {0.1 + 0.2}")
+print(chr(72) + chr(111) + chr(119) + chr(33))
+
+s = "Hello world"
+print(s[-5:] + ' ' + s[0:5])
