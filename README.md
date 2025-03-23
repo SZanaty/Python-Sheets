@@ -7,4 +7,4 @@ Contains all codes and testing
 
 [Sheet 1](https://example.com)<br>
 
-[Sheet 2](https://github.com/SZanaty/Python-Sheets/blob/ca345b18fb9d41663c6ba1cf0fb352adebbc632e/Sheet%202)<br>
+[Sheet 2](https://github.com/SZanaty/Python-Sheets/tree/cfefc4340a44efec44dfe75cc627512acc4dd1ff/Sheet_2)<br>
