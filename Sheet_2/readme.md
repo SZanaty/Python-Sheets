@@ -88,4 +88,29 @@ print(s[-5:] + ' ' + s[0:5])
 ~~~
 Output `world Hello` Replaced the 2 words
 
+#List
 
+1 to 8 in the same code
+~~~
+List = [1,2,3] #Create list with 1,2,3
+List.extend([5,6,7]) #Extend it with 5,6,7
+List.insert(3,4) #Adds 3,4
+List.pop() #Removes last element
+List.remove(6) #Removes 6
+List_3 = List.index(3) #Find 3
+List.reverse() #Reverse it
+List2 = List[:3] #Make new list from the first 3 index
+~~~
+I added "Print" after everyline to get the output which is 
+`[1, 2, 3]
+[1, 2, 3, 5, 6, 7]
+[1, 2, 3, 4, 5, 6, 7]
+[1, 2, 3, 4, 5, 6]
+[1, 2, 3, 4, 5]
+2
+[5, 4, 3, 2, 1]
+[5, 4, 3]`
+
+9. I dont know
+
+10. I dont know
