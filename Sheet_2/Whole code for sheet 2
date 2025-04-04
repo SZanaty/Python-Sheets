@@ -38,3 +38,21 @@ print(chr(72) + chr(111) + chr(119) + chr(33))
 
 s = "Hello world"
 print(s[-5:] + ' ' + s[0:5])
+
+
+List = [1,2,3] #Create list with 1,2,3
+print(List)
+List.extend([5,6,7]) #Extend it with 5,6,7
+print(List)
+List.insert(3,4) #Adds 3,4
+print(List)
+List.pop() #Removes last element
+print(List)
+List.remove(6) #Removes 6
+print(List)
+List_3 = List.index(3) #Find 3
+print(List_3)
+List.reverse() #Reverse it
+print(List)
+List2 = List[:3] #Make new list from the first 3 index
+print(List2)
