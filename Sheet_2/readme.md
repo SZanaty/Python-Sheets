@@ -93,8 +93,8 @@ Output `world Hello` Replaced the 2 words
 1 to 8 in the same code
 ~~~
 List = [1,2,3] #Create list with 1,2,3
-List.extend([5,6,7]) #Extend it with 5,6,7
-List.insert(3,4) #Adds 3,4
+List.extend([5,6,7]) #Adds 5,6,7
+List.insert(3,4) #Adds 3 to index 4
 List.pop() #Removes last element
 List.remove(6) #Removes 6
 List_3 = List.index(3) #Find 3
