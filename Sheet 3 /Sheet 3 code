@@ -1,0 +1,13 @@
+Code 1:
+```
+print("Type the time for the 10km run, type 0 to end")
+number = 0
+time = 0
+time_input = float(input("Enter time you ran for 10km"))
+while time_input!=0:
+ number += 1
+ time = time_input + time
+ time_input=float(input("Enter time you ran for 10km"))
+else:
+ print("Your average time is " , time / number)
+```
