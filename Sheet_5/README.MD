@@ -1,4 +1,4 @@
-##Code 1:
+Code 1:
 ```
 list1=list(range(6))
 print(list1)
@@ -40,3 +40,16 @@ print(r)
 Output:`[2, 3, 4]`
 
 Code 3 with 'map':
+```
+def func(a,b,c):
+ print(a,b,c)
+ return 10+a
+func(a=2,b=3,c=4)
+```
+Output:`2, 3, 4`
+
+Code 4:
+```
+
+```
+Output:``
