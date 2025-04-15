@@ -23,6 +23,7 @@ z_coor = [0, -1, -2, -3, -4]
 points = [(x, y, z) for x, y, z in zip(x_coor, y_coor, z_coor)]
 ```
 Output:`[(1, 2, 0), (2, 4, -1), (3, 6, -2), (4, 8, -3), (5, 10, -4)]`
+zip:`puts elements from iterables to tuple'
 
 
 Code 3:
@@ -39,6 +40,7 @@ print(r)
 ```
 Output:`[2, 3, 4]`
 
+
 Code 3 with 'map':
 ```
 def func(a,b,c):
@@ -48,7 +50,42 @@ func(a=2,b=3,c=4)
 ```
 Output:`2, 3, 4`
 
+
 Code 4:
+```
+
+```
+Output:``
+
+
+Code 5:
+```
+def modlist(lst):
+    for i in range(len(lst)):
+        lst[i] = 10 * lst[i]
+def modvar(num):
+    num += 10
+lst = [1, 2, 3]
+modlist(lst)
+print(lst)
+x = 0
+modvar(x)
+print(x)
+```
+Output:`[10, 20, 30]
+0`
+
+
+Code 6:
+```
+x=[1,2,10,13,1]
+output=[num%2==0 for num in x]
+print(output)
+```
+Output:`[False, True, True, False, False]`
+
+
+Code 7:
 ```
 
 ```
