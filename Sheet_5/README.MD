@@ -87,6 +87,19 @@ Output:`[False, True, True, False, False]`
 
 Code 7:
 ```
-
+class Point2D:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+    def __str__(self):
+        return f"({self.x}, {self.y})"
+    def add(self, p):
+        self.x += p.x
+        self.y += p.y
+    def distance(self, p):
+        delta_x = self.x - p.x
+        delta_y = self.y - p.y
+        dist = (delta_x ** 2 + delta_y ** 2) ** 0.5
+        return dist
 ```
-Output:``
+Explanation:``
