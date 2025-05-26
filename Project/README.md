@@ -29,7 +29,7 @@ plt.axis("equal")
 plt.show()
 ```
 
-Second Chart:
+Second Histogram:
 ```
 plt.figure()
 plt.hist(data[:, age], bins=10, color="blue", edgecolor="black")
@@ -67,7 +67,7 @@ plt.grid(True)
 plt.show()
 ```
 
-Fifth Chart:
+Fifth Bar Chart:
 ```
 bins = [30, 40, 50, 60, 70, 80]
 labels = ["30–39", "40–49", "50–59", "60–69", "70–79"]
