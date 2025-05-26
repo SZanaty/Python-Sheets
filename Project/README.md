@@ -1,5 +1,4 @@
-# Code Prensibles
-##Inputs
+Inputs:
 ```
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,7 +17,8 @@ spo2 = 8
 bmi = 9
 target = 10
 ```
-##First Chart
+
+First Pie Chart:
 ```
 labels=["Healthy", "Sick"]
 counts=[np.sum(data[:, target] == 0), np.sum(data[:, target] == 1)]
@@ -29,6 +29,8 @@ plt.axis("equal")
 plt.show()
 ```
 
+Second Chart:
+```
 plt.figure()
 plt.hist(data[:, age], bins=10, color="blue", edgecolor="black")
 plt.xlabel("Age")
@@ -36,7 +38,10 @@ plt.ylabel("Patients")
 plt.title("Age")
 plt.grid(True)
 plt.show()
+```
 
+Third Histogram: 
+```
 healthy_chol = data[data[:, target] == 0][:, chol]
 sick_chol = data[data[:, target] == 1][:, chol]
 plt.figure()
@@ -47,7 +52,10 @@ plt.ylabel("Patients")
 plt.legend()
 plt.grid(True)
 plt.show()
+```
 
+Fourth Scatter:
+```
 sick = data[data[:, target] == 1]
 sizes = sick[:, bmi] * 1  
 scatter = plt.scatter(sick[:, trestbps], sick[:, thalach], c=sick[:, age])
@@ -57,7 +65,10 @@ plt.ylabel("Max Heart Rate")
 plt.title("Blood Pressure and Heart Rate 'Sick Patients'")
 plt.grid(True)
 plt.show()
+```
 
+Fifth Chart:
+```
 bins = [30, 40, 50, 60, 70, 80]
 labels = ["30–39", "40–49", "50–59", "60–69", "70–79"]
 avg_thalach = []
@@ -72,7 +83,7 @@ plt.ylabel("Average Max Heart Rate (bpm)")
 plt.title("Average Max Heart Rate by Age Group")
 plt.grid(axis="y")
 plt.show()
-
+```
 
 Whole Code
 ```
