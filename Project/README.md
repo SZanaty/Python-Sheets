@@ -22,7 +22,6 @@ First Pie Chart:
 ```
 mylabels = ["Healthy", "Sick"]
 Healthy_Sick = [np.sum(data[:, target] == 0), np.sum(data[:, target] == 1)]
-plt.figure()
 plt.pie(Healthy_Sick, labels=mylabels, autopct="%1.1f%%", startangle=90)
 plt.title("Heart Disease")
 plt.show()
@@ -105,7 +104,6 @@ target = 10
 
 mylabels = ["Healthy", "Sick"]
 Healthy_Sick = [np.sum(data[:, target] == 0), np.sum(data[:, target] == 1)]
-plt.figure()
 plt.pie(Healthy_Sick, labels=mylabels, autopct="%1.1f%%", startangle=90)
 plt.title("Heart Disease")
 plt.show()
