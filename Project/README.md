@@ -20,23 +20,21 @@ target = 10
 
 First Pie Chart:
 ```
-labels=["Healthy", "Sick"]
-counts=[np.sum(data[:, target] == 0), np.sum(data[:, target] == 1)]
+mylabels=["Healthy", "Sick"]
+Healthy_Sick=[np.sum(data[:, target] == 0), np.sum(data[:, target] == 1)]
 mpl.figure()
-mpl.pie(counts, labels=labels, autopct="%1.1f%%", startangle=90)
+mpl.pie(Healthy_Sick, labels=mylabels, autopct="%1.1f%%", startangle=90)
 mpl.title("Heart Disease")
-mpl.axis("equal")
 mpl.show()
 ```
 
 Second Histogram:
 ```
-mpl.figure()
 mpl.hist(data[:, age], bins=15, color="blue", edgecolor="black")
 mpl.xlabel("Age")
 mpl.ylabel("Patients")
 mpl.title("Age")
-mpl.grid(True)
+mpl.grid(axis="y")
 mpl.show()
 ```
 
@@ -44,26 +42,27 @@ Third Histogram:
 ```
 healthy_chol = data[data[:, target] == 0][:, chol]
 sick_chol = data[data[:, target] == 1][:, chol]
-mpl.figure()
 mpl.hist([healthy_chol, sick_chol], bins=40, stacked=True, label=["Healthy", "Sick"], color=["green", "red"])
 mpl.title("Cholesterol Level")
 mpl.xlabel("Serum Cholesterol")
 mpl.ylabel("Patients")
 mpl.legend()
-mpl.grid(True)
+mpl.grid()
 mpl.show()
 ```
 
 Fourth Scatter:
 ```
 sick = data[data[:, target] == 1]
-sizes = sick[:, bmi] * 1  
-scatter = mpl.scatter(sick[:, trestbps], sick[:, thalach], c=sick[:, age])
+size_adjustment = 3
+scatter_sizes = sick[:, bmi] * size_adjustment
+scatter_sizes = np.clip(scatter_sizes, 10, 200)
+scatter = mpl.scatter(sick[:, trestbps], sick[:, thalach], c=sick[:, age], s=scatter_sizes)
 mpl.colorbar(scatter, label="Age")
 mpl.xlabel("Resting Blood Pressure")
 mpl.ylabel("Max Heart Rate")
 mpl.title("Blood Pressure and Heart Rate 'Sick Patients'")
-mpl.grid(True)
+mpl.grid()
 mpl.show()
 ```
 
@@ -104,41 +103,40 @@ spo2 = 8
 bmi = 9
 target = 10
 
-labels=["Healthy", "Sick"]
-counts=[np.sum(data[:, target] == 0), np.sum(data[:, target] == 1)]
+mylabels=["Healthy", "Sick"]
+Healthy_Sick=[np.sum(data[:, target] == 0), np.sum(data[:, target] == 1)]
 mpl.figure()
-mpl.pie(counts, labels=labels, autopct="%1.1f%%", startangle=90)
+mpl.pie(Healthy_Sick, labels=mylabels, autopct="%1.1f%%", startangle=90)
 mpl.title("Heart Disease")
-mpl.axis("equal")
 mpl.show()
 
-mpl.figure()
 mpl.hist(data[:, age], bins=15, color="blue", edgecolor="black")
 mpl.xlabel("Age")
 mpl.ylabel("Patients")
 mpl.title("Age")
-mpl.grid(True)
+mpl.grid(axis="y")
 mpl.show()
 
 healthy_chol = data[data[:, target] == 0][:, chol]
 sick_chol = data[data[:, target] == 1][:, chol]
-mpl.figure()
 mpl.hist([healthy_chol, sick_chol], bins=40, stacked=True, label=["Healthy", "Sick"], color=["green", "red"])
 mpl.title("Cholesterol Level")
 mpl.xlabel("Serum Cholesterol")
 mpl.ylabel("Patients")
 mpl.legend()
-mpl.grid(True)
+mpl.grid()
 mpl.show()
 
 sick = data[data[:, target] == 1]
-sizes = sick[:, bmi] * 1  
-scatter = mpl.scatter(sick[:, trestbps], sick[:, thalach], c=sick[:, age])
+size_adjustment = 3
+scatter_sizes = sick[:, bmi] * size_adjustment
+scatter_sizes = np.clip(scatter_sizes, 10, 200)
+scatter = mpl.scatter(sick[:, trestbps], sick[:, thalach], c=sick[:, age], s=scatter_sizes)
 mpl.colorbar(scatter, label="Age")
 mpl.xlabel("Resting Blood Pressure")
 mpl.ylabel("Max Heart Rate")
 mpl.title("Blood Pressure and Heart Rate 'Sick Patients'")
-mpl.grid(True)
+mpl.grid()
 mpl.show()
 
 bins = [30, 40, 50, 60, 70, 80]
